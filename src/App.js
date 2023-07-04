@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+  BrowserRouter,
+  Routes,
+} from "react-router-dom";
+
+import {HomePage} from './pages/Home/HomePage';
+import {HeaderPartial} from './Partials/HeaderPartial/HeaderPartial';
+import {MinhasPastas} from './pages/MinhasPastas/MinhasPastasPage';
+import {saveFolder} from './services/pinService';
+import {AppContext} from './store/AppContext';
+
+const initialState = {
+  activePinId: null,
+  mode: null,
+  folders: [],
+  type: null,
+  pins: []
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <AppContext initialState={initialState}>
+          <HeaderPartial />
+          <Routes>
+            <Route path="/" element={<HomePage />}/>
+            <Route path="/minhas-pastas" element={<MinhasPastas />}/>
+          </Routes>
+        </AppContext>
+      </div>
+    </BrowserRouter>
   );
 }
 
