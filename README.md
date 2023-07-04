@@ -1,6 +1,6 @@
-# Nickterest 🤳
+<h1 align=center>Nickterest 🤳</h1>
 
-Project developed during React classes promoted by Instituto Nu in partnership with Descomplica 💜
+<p align=center>Project developed during React classes promoted by Instituto Nu in partnership with Descomplica 💜</p>
 
 ### 👨‍💻 Programming Languages
 
