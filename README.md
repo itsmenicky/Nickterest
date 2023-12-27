@@ -11,6 +11,6 @@
 
 - JavaScript
 
-### 💡 Features
+### 🛠️ Tools
 
 - React.JS
