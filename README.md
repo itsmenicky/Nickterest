@@ -1,5 +1,5 @@
 <h1 align=center>Nickterest 🤳</h1>
-<div align=center><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"></div>
+<div align=center><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"> <img src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"></div>
 <p align=center>Project developed during React classes promoted by Instituto Nu in partnership with Descomplica 💜</p></br>
 <img src='https://github.com/itsmenicky/Nickterest/blob/main/video/nickterest.gif'></br>
 
@@ -14,3 +14,4 @@
 ### 🛠️ Tools
 
 - React.JS
+- Bootstrap
